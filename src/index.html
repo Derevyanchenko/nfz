@@ -15,36 +15,112 @@
 
 <body>
 
-    <header class="header">
+    <header class="header section--grey">
         <div class="container">
             <div class="header__top">
                 <div class="logo__wrapper">
                     <div class="logo">
-                        <img src="" alt="">
+                        <img src="img/logo.png" alt="">
                     </div>
                     <div class="languages">
                         languages
                     </div>
                 </div>
 
-                <button class="header__btn"></button>
+                <button class="header__btn">хочу в nfz</button>
 
                 <div class="header__controls">
                     <div class="header__social">
                         <a href="#" class="user">
-                            <img src="#" alt="">
+                            <img src="img/header_user.svg" alt="">
                         </a>
                         <a href="#" class="user">
-                            <img src="#" alt="">
+                            <img src="img/header_call.svg" alt="">
                         </a>
 
-                        <div class="burger"></div>
+                        <button class="burger">
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div> <!-- header__top -->
 
-            <div class="header__submenu">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit, magni.
+            <div class="header__submenu-wrapper">
+                
+                    <ul class="header__menu">
+
+                            <li class="menu-item-has-children">
+                                <a href="#">О нас</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#"> NFZ Community</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Структура</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Команда</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Миссия и видение</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Устойчивое развитие</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">СМИ о нас</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Партнеры</a>
+                                    </li>
+                                </ul>
+                            </li>
+        
+                            <li>
+                                <a href="#">Календарь событий </a>
+                            </li>
+        
+                            <li>
+                                <a href="#">Новости</a>
+                            </li>
+        
+                            <li class="menu-item-has-children">
+                                <a href="#">
+                                    Конкурс дизайнеров
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">СМИ о конкурсе</a></li>
+                                    <li><a href="#">Менторы</a></li>
+                                    <li><a href="#">Призы и гранты</a></li>
+                                    <li><a href="#">Истории успеха</a></li>
+                                    <li><a href="#">Архив</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="menu-item-has-children">
+                                <a href="#">
+                                    NFZ Education
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Программы обучения</a></li>
+                                    <li><a href="#">NFZ talks</a></li>
+                                    <li><a href="#">Преподаватели</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="menu-item-has-children">
+                                <a href="#">
+                                        Торговый дом
+                                </a>
+                                <ul class="sub-menu">
+                                    <li><a href="#">Торговый дом</a></li>
+                                    <li><a href="#">Консорциум</a></li>
+                                    <li><a href="#">Бюро</a></li>
+                                </ul>
+                            </li>
+        
+                        </ul>
+
             </div>
 
         </div>
@@ -52,16 +128,15 @@
 
     <section class="banner">
         <div class="banner__slider">
-
-            <div class="banner__item" style="background: green;">
-                <div class="container">
-                    <div class="banner__arrows">
-                        <div class="banner__prev"></div>
-                        <div class="banner__next"></div>
-                    </div>
-                </div>
-                <!-- </div>    banner__item -->
-
+            <div class="banner__item" style="background: url(img/banner-1.jpg);">
+            </div>
+            <div class="banner__item" style="background: url(img/banner-1.jpg);">
+            </div>
+        </div> <!-- banner__slider -->
+        <div class="container">
+            <div class="banner__arrows">
+                <div class="banner__prev"></div>
+                <div class="banner__next"></div>
             </div>
             <div class="banner__dots"></div>
     </section> <!-- banner -->
@@ -70,12 +145,18 @@
         <div class="container">
             <div class="aboutUs__wrapper">
                 <div class="aboutUs__item">
-                    <h2></h2>
-                    <p></p>
+                    <h2>Мы уверены: </h2>
+                    <p>
+                        для создания качественной, изысканной и доступной одежды в Украине нужны диалог и коллаборация
+                        перспективных молодых дизайнеров и опытных производственных компаний.
+                    </p>
                 </div>
                 <div class="aboutUs__item">
-                    <h2></h2>
-                    <p></p>
+                    <h2>Наша цель – </h2>
+                    <p>
+                        изменить мир ритейла не только в Украине, но и во всем мире,
+                        с помощью нестандартного подхода и новой инновационной площадки.
+                    </p>
                 </div>
             </div>
         </div>
@@ -86,19 +167,56 @@
             <div class="news__box">
                 <div class="news__wrapper">
                     <div class="news__column">
-                        <div class="news__item news__item--lg"></div>
+                        <div class="news__item news__item--lg" style="background: url(img/news-1.jpg);">
+                            <div class="dates">
+                                18.07- 29.08
+                            </div>
+                            <p class="text">
+                                Приглашаем пройти Летний курс базовой импровизации с профессиональным актером и
+                                режиссером Юрием Кляцкиным
+                            </p>
+                        </div>
                         <div class="news__item-wrapper">
-                            <div class="news__item"></div>
-                            <div class="news__item"></div>
+                            <div class="news__item" style="background: url(img/news-default.png);">
+                                <div class="dates">
+                                    18.07- 29.08
+                                </div>
+                                <p class="text">
+                                    Курс «Fashion Illustration 2.0: путь от идеи до воплощения»
+                                </p>
+                            </div>
+                            <div class="news__item" style="background: url(img/news-default.png);">
+                                <div class="dates">
+                                    18.07- 29.08
+                                </div>
+                                <p class="text">
+                                    Курс «Fashion Illustration 2.0: путь от идеи до воплощения»
+                                </p>
+                            </div>
                         </div>
                     </div>
 
                     <div class="news__column">
                         <div class="news__item-wrapper">
-                            <div class="news__item"></div>
-                            <div class="news__item"></div>
+                            <div class="news__item" style="background: url(img/news-default.png);">
+                                <div class="dates">
+                                    18.07- 29.08
+                                </div>
+                                <p class="text">
+                                    Курс «Fashion Illustration 2.0: путь от идеи до воплощения»
+                                </p>
+                            </div>
+                            <div class="news__item" style="background: url(img/news-default.png);">
+                                <div class="dates">
+                                    18.07- 29.08
+                                </div>
+                                <p class="text">
+                                    Курс «Fashion Illustration 2.0: путь от идеи до воплощения»
+                                </p>
+                            </div>
                         </div>
-                        <div class="news__item news__item--lg"></div>
+                        <div class="news__item news__item--lg" style="background: url(img/news-6.jpg);">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -111,26 +229,44 @@
                 <div class="h2 section__title competition__title"></div>
                 <div class="competition__wrapper">
                     <div class="competition__column competition__column--lg">
-                        <div class="competition__item">
-
+                        <div class="competition__item video">
+                            <img src="img/concurs-1.jpg" alt="">
                         </div>
                     </div>
                     <div class="competition__column">
-                        <div class="competition__item"></div>
-                        <div class="competition__item"></div>
+                        <div class="competition__item">
+                            <div class="competition__item-img">
+                                <img src="img/concurs-2.jpg" alt="">
+                            </div>
+                            <p class="date">23.07</p>
+                            <p class="text">
+                                Курс «Fashion Illustration 2.0: путь от идеи до воплощения»
+                            </p>
+                        </div>
+                        <div class="competition__item">
+                            <div class="competition__item-img">
+                                <img src="img/concurs-3.jpg" alt="">
+                            </div>
+                            <p class="date">23.07</p>
+                            <p class="text">
+                                Курс «Fashion Illustration 2.0: путь от идеи до воплощения»
+                            </p>
+                        </div>
                     </div>
                 </div>
 
                 <div class="competition__bottom">
                     <div class="competition__bottom-col">
                         <p>
-                            text
+                            Лучшие эксперты из мира моды и стиля, дизайнеры, владельц известных брендов, коучи и
+                            маркетологи станут менторами новой экосистемы.
                         </p>
                     </div>
 
                     <div class="competition__bottom-col">
                         <p>
-                            text
+                            В Украине возможно развивать качественные продукты, собственные крупные бренды и создавать
+                            будущее мировой моды.
                         </p>
                     </div>
                 </div>
@@ -144,15 +280,15 @@
             <div class="contactForm__box">
                 <form action="#" class="contactForm__form">
                     <div class="form-control">
-                        <p></p>
-                        <input type="text" name="name">
+                        <p> Имя:</p>
+                        <input type="text" name="name" required>
                     </div>
                     <div class="form-control">
-                        <p></p>
-                        <input type="text" name="phone">
+                        <p>Телефон:</p>
+                        <input type="tel" name="phone" required>
                     </div>
                     <div class="form-control">
-                        <button class="btn btn-bordered">btn</button>
+                        <button class="btn btn-bordered btn light">хочу в nfz</button>
                     </div>
                 </form>
             </div>
@@ -162,20 +298,25 @@
     <section class="education">
         <div class="container">
             <div class="education__box">
-                <div class="h2 section__title education__title"></div>
-                <p class="section__subtitle education__subtitle"></p>
+                <div class="h2 section__title education__title">Nfz Education</div>
+                <p class="section__subtitle education__subtitle">
+                    Мы предлагаем дизайнерами воплотить задуманные мечты и планы, эскизы и зарисовки, и погрузиться в
+                    мир fashion.
+                    Лучшие эксперты из мира моды и стиля, дизайнеры, владельцы известных брендов, коучи и маркетологи
+                    станут менторами новой экосистемы.
+                </p>
                 <div class="education__wrapper">
                     <div class="education__top">
                         <a href="#" class="education__item">
-                            <img src="" alt="">
+                            <img src="img/education-1.jpg" alt="">
                         </a>
                     </div>
                     <div class="education__bottom">
                         <a href="#" class="education__item">
-                            <img src="" alt="">
+                            <img src="img/education-2.jpg" alt="">
                         </a>
                         <a href="#" class="education__item">
-                            <img src="" alt="">
+                            <img src="img/education-3.jpg" alt="">
                         </a>
                     </div>
                 </div>
@@ -186,49 +327,152 @@
     <section class="tradingHouse">
         <div class="container">
             <div class="tradingHouse__box">
-                <h2 class="section__title tradingHouse__title"></h2>
+                <h2 class="section__title tradingHouse__title">Торговый дом</h2>
             </div>
         </div>
         <div class="tradingHouse__wrapper">
+
             <div class="tradingHouse__item">
                 <div class="container">
-                    <div class="tradingHouse__item-content">
-                        <div class="tradingHouse__item-title"></div>
-                        <div class="tradingHouse__item-text"></div>
+                    <div class="tradingHouse__item-content" style="background: url(img/traide-house-1.jpg);">
+                        <div class="tradingHouse__item-title">Торговый дом</div>
+                        <div class="tradingHouse__item-text">
+                            Основна компетенція команди Торгового дому – організація продажів. Зателефонуйте нам і ми
+                            знайдемо спосіб збільшити ваші об’єми виробництва та експорт продукції.
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="tradingHouse__item">
+                <div class="container">
+                    <div class="tradingHouse__item-content" style="background: url(img/traide-house-2.jpg);">
+                        <div class="tradingHouse__item-title">Консорциум</div>
+                        <div class="tradingHouse__item-text">
+                            Основна компетенція команди Торгового дому – організація продажів. Зателефонуйте нам і ми
+                            знайдемо спосіб збільшити ваші об’єми виробництва та експорт продукції.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tradingHouse__item">
+                <div class="container">
+                    <div class="tradingHouse__item-content" style="background: url(img/traide-house-e.jpg);">
+                        <div class="tradingHouse__item-title">Бюро </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- tradingHouse -->
 
     <footer class="footer">
         <div class="container">
-            <ul class="footer__top">
-                <li class="footer__menu">
-                <li></li>
-                </li>
-            </ul>
+            <div class="footer__top">
+                <ul class="footer__menu">
+
+                    <li class="menu-item-has-children">
+                        <a href="#">О нас</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#"> NFZ Community</a>
+                            </li>
+                            <li>
+                                <a href="#">Структура</a>
+                            </li>
+                            <li>
+                                <a href="#">Команда</a>
+                            </li>
+                            <li>
+                                <a href="#">Миссия и видение</a>
+                            </li>
+                            <li>
+                                <a href="#">Устойчивое развитие</a>
+                            </li>
+                            <li>
+                                <a href="#">СМИ о нас</a>
+                            </li>
+                            <li>
+                                <a href="#">Партнеры</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#">Календарь событий </a>
+                    </li>
+
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                        <a href="#">
+                            Конкурс дизайнеров
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">СМИ о конкурсе</a></li>
+                            <li><a href="#">Менторы</a></li>
+                            <li><a href="#">Призы и гранты</a></li>
+                            <li><a href="#">Истории успеха</a></li>
+                            <li><a href="#">Архив</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                        <a href="#">
+                            NFZ Education
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Программы обучения</a></li>
+                            <li><a href="#">NFZ talks</a></li>
+                            <li><a href="#">Преподаватели</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item-has-children">
+                        <a href="#">
+                                Торговый дом
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Торговый дом</a></li>
+                            <li><a href="#">Консорциум</a></li>
+                            <li><a href="#">Бюро</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
 
             <div class="footer__bottom">
                 <div class="footer__bottom-adress">
-                    <p></p>
+                    <p>
+                        <b>Центральный офис:
+                            Киев, ул Старокиевская, 10-г </b>
+                        Пн-Пт 9.00-18.00 ,
+                        +38 093 786-69-20
+                    </p>
                 </div>
                 <div class="footer__bottom-questions">
                     <p>
-
+                        <b>По вопросам партнерства платформы:</b>
+                        +38(097) 917 80 74
                     </p>
                 </div>
                 <div class="footer__bottom-socials">
                     <a href="#" class="footer__social">
-                        <img src="" alt="">
+                        <img src="img/footer-icon-1.png" alt="">
+                    </a>
+                    <a href="#" class="footer__social">
+                        <img src="img/footer-icon-2.png" alt="">
                     </a>
                 </div>
             </div>
         </div>
     </footer> <!-- footer -->
 
-    <h1>Run</h1>
     <!-- scripts -->
     <script src="js/jquery-3.0.0.min.js"></script>
     <script src="js/slick.min.js"></script>

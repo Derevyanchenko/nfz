@@ -1,1 +1,53 @@
 // header
+
+.header { 
+    padding: 0 33px;
+	.container { 
+
+		.header__top { 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+			.logo__wrapper { 
+
+				.logo { 
+                    max-width: 140px;
+                    width: 100%;
+					img { 
+                        max-width:  100%;
+					}
+				}
+
+				.languages { 
+
+				}
+			}
+
+			.header__btn { 
+
+			}
+
+			.header__controls { 
+
+				.header__social { 
+
+					.user { 
+
+						img { 
+
+						}
+					}
+
+					.burger { 
+
+					}
+				}
+			}
+		}
+
+		.header__submenu { 
+
+		}
+	}
+}
