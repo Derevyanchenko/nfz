@@ -4,7 +4,7 @@
 /*style*/
 
 @font-face {
-  font-family: 'Rubik Bold';
+  font-family: "Rubik Bold";
   src: url("../fonts/Rubik-Bold.eot");
   src: local("☺"), url("../fonts/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik-Bold.ttf") format("truetype"), url("fonts/Rubik-Bold.svg") format("svg");
   font-weight: normal;
@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   src: url("../fonts/Rubik-Regular.eot");
   src: local("☺"), url("../fonts/Rubik-Regular.woff") format("woff"), url("fonts/Rubik-Regular.ttf") format("truetype"), url("../fonts/Rubik-Regular.svg") format("svg");
   font-weight: normal;
@@ -49,7 +49,7 @@ button {
   display: block;
   background: transparent;
   cursor: pointer;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 input:focus {
@@ -59,7 +59,7 @@ input:focus {
 body {
   color: #666666;
   font-size: 14px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
 
@@ -87,7 +87,7 @@ h6 {
   -ms-flex-align: center;
   align-items: center;
   color: #600060;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 46px;
   font-weight: 700;
   margin-bottom: 38px;
@@ -121,6 +121,23 @@ h6 {
 
 video {
   max-width: 100%;
+}
+
+.btn {
+  padding: 26px 62px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 16px;
+  background: transparent;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #79004a;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .header .container .header__top {
@@ -419,6 +436,74 @@ video {
 
 .competition video {
   height: 485px;
+}
+
+.contactForm {
+  background-color: #79004a;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.contactForm .contactForm__box {
+  padding: 32px 40px;
+}
+
+.contactForm .contactForm__box .contactForm__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contactForm .contactForm__box .contactForm__form .form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.contactForm .contactForm__box .contactForm__form .form__inputs .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  max-width: 350px;
+  width: 100%;
+  margin-right: 35px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.contactForm .contactForm__box .contactForm__form .form__inputs .form-control p {
+  color: #ffffff;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 11px;
+}
+
+.contactForm .contactForm__box .contactForm__form .form__inputs .form-control input {
+  height: 42px;
+  border: 1px solid #ffffff;
+  max-width: 300px;
+  background: transparent;
+  width: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: #fff;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .news {

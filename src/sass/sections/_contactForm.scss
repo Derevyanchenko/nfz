@@ -1,0 +1,46 @@
+// contact Form
+
+.contactForm {
+  background-color: #79004a;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  .contactForm__box {
+    padding: 32px 40px;
+    .contactForm__form {
+      display: flex;
+      justify-content: space-between;
+      .form__inputs {
+        display: flex;
+        align-items: center;
+        .form-control {
+            display: flex;
+            align-items: center;
+            max-width: 350px;
+            width: 100%;
+            margin-right: 35px;
+            flex-shrink: 0;
+            p {
+              color: #ffffff;
+              font-family: "Myriad Pro";
+              font-size: 16px;
+              font-weight: 400;
+              margin-right: 11px;
+            }
+    
+            input {
+              height: 42px;
+              border: 1px solid #ffffff;
+              max-width: 300px;
+              background: transparent;
+              width: 100%;
+              flex-shrink: 0;
+              color: #fff;
+              padding-left: 15px;
+              display: flex;
+              align-items: center;
+            }
+          }
+      }
+    }
+  }
+}
