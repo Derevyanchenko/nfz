@@ -11,7 +11,7 @@ $(document).ready(function() {
   // banner slider
 
   $('.banner__slider').slick({
-      dots: false,
+      dots: true,
       arrows: true,
       infinite: true,
       slidesToShow: 1,
@@ -30,7 +30,7 @@ $(document).ready(function() {
             slidesToScroll: 1,
             infinite: true,
             arrows: true,
-            dots: false
+            dots: true
           }
         },
         {

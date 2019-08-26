@@ -1,7 +1,7 @@
 // banner
 
 .banner {
-  margin-bottom: 60px;
+  margin-bottom: 35px;
   position: relative;
   &__item {
 	min-height: 450px;
@@ -41,5 +41,26 @@
     right: 0;
   }
   &__dots {
+	  margin-top: 20px;
+	  .slick-dots {
+		  display: flex;
+		  align-items: center;
+		  justify-content: center;
+		  li {
+			button {
+				font-size: 0;
+				background: transparent;
+				border: 1px solid #600060;
+				border-radius: 30px;
+				width: 120px;
+			}
+		  }
+		  li.slick-active {
+			  button {
+				border: 2px solid #600060;
+			  }
+		  }
+	  }
+	// border: 1px solid #600060;
   }
 }
