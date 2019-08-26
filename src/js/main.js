@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
-  // open mob menu
-
-  console.log("run")
+  // open main menu
 
    $(".js-open-submenu").on("click", function() {
 
@@ -14,14 +12,35 @@ $(document).ready(function() {
       if ( submenu.is(":visible") ) {
         submenu.slideUp(300);
         that.removeClass("active");
-        console.log("visible");
       } else {
         submenu.slideDown(300);
         that.addClass("active");
-        console.log("hidden");
       }
 
    });
+
+   // open submenus 
+
+   $(".menu-item-has-children").on("click", function(e) {
+
+    e.preventDefault();
+
+    let 
+      that    = $(this),
+      submenu = that.find(".sub-menu");
+
+    $(".sub-menu").fadeOut(300);
+    $(".menu-item-has-children").removeClass("active");
+
+    if ( submenu.is(":visible") ) {
+      submenu.fadeOut(300);
+      that.removeClass("active");
+    } else {
+      submenu.fadeIn(300);
+      that.addClass("active");
+    }
+
+ });
 
   // banner slider
 
