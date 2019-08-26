@@ -679,3 +679,61 @@ video {
   line-height: 24px;
   font-weight: 700;
 }
+
+.tradingHouse {
+  margin-top: 60px;
+}
+
+.tradingHouse .tradingHouse__box .section__title {
+  margin-bottom: 0;
+  padding-bottom: 40px;
+}
+
+.tradingHouse__wrapper .tradingHouse__item:first-child {
+  background-color: rgba(215, 134, 172, 0.65);
+}
+
+.tradingHouse__wrapper .tradingHouse__item:nth-child(2n + 2) {
+  background-color: rgba(202, 176, 231, 0.65);
+}
+
+.tradingHouse__wrapper .tradingHouse__item:nth-child(3n + 3) {
+  background-color: rgba(229, 169, 194, 0.65);
+}
+
+.tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content .tradingHouse__item-title {
+  margin-left: 15%;
+  padding: 54px 0;
+  color: #ffffff;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 74px;
+  line-height: 88px;
+  font-weight: 700;
+}
+
+.tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content .tradingHouse__item-text {
+  color: #ffffff;
+  max-width: 302px;
+  width: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+}
