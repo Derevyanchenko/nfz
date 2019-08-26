@@ -79,16 +79,24 @@ h6 {
 }
 
 .section__title {
+  padding-top: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #600060;
   font-family: 'Roboto', sans-serif;
   font-size: 46px;
   font-weight: 700;
+  margin-bottom: 38px;
 }
 
 .section__title:before {
   content: "";
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 12px;
   width: 57px;
   height: 10px;
   background-color: #600060;
@@ -109,6 +117,10 @@ h6 {
 
 .sub-menu {
   display: none;
+}
+
+video {
+  max-width: 100%;
 }
 
 .header .container .header__top {
@@ -317,6 +329,96 @@ h6 {
   font-weight: 300;
   line-height: 22px;
   margin-bottom: 35px;
+}
+
+.competition {
+  margin-top: 60px;
+}
+
+.competition .competition__box .competition__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.competition .competition__box .competition__wrapper .competition__column .competition__item {
+  max-width: 100%;
+  width: 100%;
+}
+
+.competition .competition__box .competition__wrapper .column_right {
+  margin-left: 30px;
+  max-width: 370px;
+  width: 100%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.competition .competition__box .competition__wrapper .column_right .competition__item-img {
+  height: 180px;
+}
+
+.competition .competition__box .competition__wrapper .column_right .competition__item-img img {
+  width: 100%;
+  min-height: 180px;
+  max-width: 100%;
+  display: block;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.competition .competition__box .competition__wrapper .column_right .competition__item .date {
+  color: #606060;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.competition .competition__box .competition__wrapper .column_right .competition__item .text {
+  color: #606060;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.competition .competition__box .competition__bottom {
+  padding: 40px;
+  padding-top: 40px;
+  padding-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.competition .competition__box .competition__bottom .competition__bottom-col {
+  max-width: 50%;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.competition .competition__box .competition__bottom .competition__bottom-col p {
+  color: #600060;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 300;
+}
+
+.competition .competition__box .competition__bottom .competition__bottom-col_left p {
+  font-family: "Roboto", sans-serif;
+  color: #606060;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 700;
+}
+
+.competition video {
+  height: 485px;
 }
 
 .news {

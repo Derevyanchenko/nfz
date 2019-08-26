@@ -74,14 +74,18 @@ h1, h2, h3,h4, h5, h6 {
 
 
 .section__title {
+	padding-top: 44px;
+	display: flex;
+    align-items: center;
 	color: #600060;
 	font-family: 'Roboto', sans-serif;
 	font-size: 46px;
 	font-weight: 700;
+	margin-bottom: 38px;
 	&:before {
 		content: "";
 		display: inline-block;
-		margin-right: 10px;
+		margin-right: 12px;
 		width: 57px;
 		height: 10px;
 		background-color: #600060;
@@ -104,4 +108,8 @@ h1, h2, h3,h4, h5, h6 {
 
 .sub-menu {
 	display: none;		
+}
+
+video {
+	max-width: 100%;
 }
