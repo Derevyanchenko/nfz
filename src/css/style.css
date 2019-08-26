@@ -263,6 +263,8 @@ h6 {
 
 .banner__item {
   min-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .aboutUs {
