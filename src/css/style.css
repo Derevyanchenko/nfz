@@ -115,7 +115,7 @@ h6 {
   background: #eff2f0;
 }
 
-.sub-menu {
+header .sub-menu {
   display: none;
 }
 
@@ -682,6 +682,10 @@ video {
 
 .tradingHouse {
   margin-top: 60px;
+}
+
+.tradingHouse .tradingHouse__bottom {
+  padding-bottom: 53px;
 }
 
 .tradingHouse .tradingHouse__box .section__title {
