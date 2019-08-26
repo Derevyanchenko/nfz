@@ -1,68 +1,93 @@
 // footer
 
-.footer { 
+.footer {
+  background-color: #12003a;
+  padding-top: 35px;
+  .footer__top {
+    padding-bottom: 40px;
+    border-bottom: 2px solid #565656;
+    .footer__menu {
+        display: flex;
+        justify-content: space-between;
+      .menu-item-has-children {
+        .sub-menu {
+          li {
+            a {
+              color: #98a1a9;
+              font-family: "Rubik", sans-serif;
+              display: block;
+              font-size: 12px;
+              font-weight: 400;
+              line-height: 16px;
+              letter-spacing: 0.11px;
+              margin-bottom: 8px;
+              transition: all 0.2s;
+              &:hover {
+                  color: #fff;
+                  transition: all 0.2s;
+              }
+            }
+          }
+        }
+      }
 
+      a {
+        color: #ffffff;
+        font-family: "Rubik", sans-serif;
+        font-size: 21px;
+        font-weight: 400;
+        display: block;
+        margin-bottom: 18px;
+      }
+    }
+  }
 
-		.footer__top { 
+  .footer__bottom {
+      padding:  32px 0;
+      display: flex;
 
-			.footer__menu { 
+    .footer__bottom-adress {
+        margin-right: 110px;
+      p {
+        color: #98a1a9;
+        font-family: "Rubik", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        letter-spacing: 0.04px;
+        b {
+            color: #fff;
+            font-family: "Rubik Bold";
+        }
+      }
+    }
 
-				.menu-item-has-children { 
+    .footer__bottom-questions {
+        margin-right: 75px;
+      p {
+        font-family: "Rubik", sans-serif;
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 400;
+        letter-spacing: 0.04px;
+        margin-bottom: 5px;
+      }
+    }
 
-					a { 
-
-					}
-
-					.sub-menu { 
-
-						li { 
-
-							a { 
-
-							}
-						}
-					}
-				}
-
-				li { 
-
-					a { 
-
-					}
-				}
-			}
-		}
-
-		.footer__bottom { 
-
-			.footer__bottom-adress { 
-
-				p { 
-
-					b { 
-
-					}
-				}
-			}
-
-			.footer__bottom-questions { 
-
-				p { 
-
-					b { 
-
-					}
-				}
-			}
-
-			.footer__bottom-socials { 
-
-				.footer__social { 
-
-					img { 
-
-					}
-				}
-			}
-		}
+    .footer__bottom-socials {
+        margin-top: 16px;
+      .footer__social {
+          margin-right: 30px;
+        
+        img {
+            max-width: 100%;
+            transition: all 0.2s;
+            &:hover {
+                opacity: 0.7;
+                transition: all 0.2s;
+            }
+        }
+      }
+    }
+  }
 }
