@@ -1,0 +1,58 @@
+// education
+
+.education {
+  .education__box {
+    .section__subtitle {
+        padding: 0 70px;
+      margin-bottom: 47px;
+      color: #606060;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 23px;
+    }
+
+    .education__wrapper {
+      .education__top {
+        .education__item {
+            display: block;
+            margin-bottom: 25px;
+          img {
+              max-width: 100%;
+          }
+        }
+      }
+
+      .education__bottom {
+          display: flex;
+
+        .education__item {
+            flex: 0 0 50%;
+            max-width: 50%;
+            height: 270px;
+            display: block;
+            &:first-child {
+                padding-right: 13px;
+            }
+            &:last-child {
+                padding-left: 13px;
+            }
+          img {
+            min-height: 270px;
+            height: 100%;
+            width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+  .education__item {
+      transition: all 0.2s;
+      &:hover {
+        transition: all 0.2s;
+        opacity: 0.7;
+      }
+  }
+}
