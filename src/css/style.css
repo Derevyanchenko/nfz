@@ -297,6 +297,7 @@ video {
 }
 
 .header__submenu-wrapper {
+  display: none;
   border: 1px solid rgba(154, 155, 155, 0.9);
 }
 

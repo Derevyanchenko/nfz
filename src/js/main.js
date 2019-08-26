@@ -2,11 +2,26 @@ $(document).ready(function() {
 
   // open mob menu
 
-    $(".header__toggle").on("click", function(e) {
-        e.preventDefault();
-        $(".header-mob").slideToggle();
-        $(this).toggleClass("header__toggle--active");
-    });
+  console.log("run")
+
+   $(".js-open-submenu").on("click", function() {
+
+      let 
+        submenu = $(".header__submenu-wrapper"),
+        that    = $(this);
+
+
+      if ( submenu.is(":visible") ) {
+        submenu.slideUp(300);
+        that.removeClass("active");
+        console.log("visible");
+      } else {
+        submenu.slideDown(300);
+        that.addClass("active");
+        console.log("hidden");
+      }
+
+   });
 
   // banner slider
 
