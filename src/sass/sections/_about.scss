@@ -1,0 +1,38 @@
+// aboutUs
+
+.aboutUs {
+  padding-top: 40px;
+  .aboutUs__wrapper {
+    display: flex;
+    justify-content: space-between;
+    .aboutUs__item {
+      max-width: 50%;
+      flex: 0 0 50%;
+      &:first-child {
+        padding-right: 35px;
+        h2 {
+          color: #600060;
+        }
+      }
+      &:last-child {
+        padding-left: 35px;
+        h2 {
+          color: #00caaf;
+        }
+      }
+      h2 {
+        font-size: 68px;
+        font-weight: 700;
+        margin-bottom: 18px;
+      }
+
+      p {
+        color: #606060;
+        font-family: "Roboto Light";
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
