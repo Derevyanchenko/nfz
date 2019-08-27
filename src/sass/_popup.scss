@@ -1,0 +1,219 @@
+// popup
+
+.overlay {
+    position: fixed;
+    /*  display: none;*/
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+  }
+  
+  .popup {
+    position: absolute;
+    left: 50%;
+    max-width: 1170px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0 3px 20px rgba(0, 0, 1, 0.5);
+    background: #fff;
+    border-radius: 1px;
+    top: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+    max-height: 100vh;
+    overflow: auto;
+  }
+  
+  .popup__wrapper {
+    position: relative;
+    padding-bottom: 50px;
+    .popup__close {
+      color: #79004a;
+      font-size: 28px;
+      font-weight: 400;
+      border: 1px solid #600060;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      right: 17px;
+      top: 17px;
+      transition: all 0.2s;
+      &:hover {
+        color: #fff;
+        background: #600060;
+        transition: all 0.2s;
+      }
+    }
+  
+    .popup__title {
+      border-bottom: 1px solid #600060;
+      padding: 40px 0;
+      text-align: center;
+      color: #79004a;
+      // font-family: Rubik;
+      font-size: 28px;
+      font-weight: 400;
+      padding-top: 27px;
+      padding-bottom: 27px;
+    }
+  
+    .contacts__form {
+      padding-top: 25px;
+  
+      .contacts__form-wrapper {
+        display: flex;
+        padding: 0 85px;
+        .contacts__form-col {
+          flex: 0 0 50%;
+          max-width: 50%;
+          &:first-child {
+            padding-right: 70px;
+          }
+          &:last-child {
+            padding-left: 70px;
+          }
+          .contacts__form-title {
+            color: #000000;
+            font-size: 26px;
+            font-weight: 400;
+            margin-bottom: 32px;
+          }
+  
+          .contacts__form-field {
+            margin-bottom: 12px;
+            p {
+              color: #606060;
+              font-family: "Myriad Pro";
+              font-size: 16px;
+              font-weight: 400;
+              margin-bottom: 10px;
+              display: inline-block;
+              position: relative;
+            }
+            input {
+              height: 38px;
+              border: 1px solid #606060;
+              width: 100%;
+              font-size: 16px;
+              padding-left: 14px;
+            }
+          }
+  
+          .contacts__form-field.required {
+            p {
+              &:before {
+                content: "*";
+                color: #ff0000;
+                font-family: "Myriad Pro";
+                position: absolute;
+                right: -12px;
+                top: 0;
+                font-size: 21px;
+                font-weight: 400;
+              }
+            }
+          }
+  
+          .checkboxBlock {
+            .checkbox {
+              .checkbox__text {
+                color: #606060;
+                font-family: "Myriad Pro";
+                font-size: 16px;
+                font-weight: 400;
+              }
+            }
+          }
+  
+          textarea {
+            height: 120px;
+            border: 1px solid #606060;
+            padding-left: 14px;
+            padding-top: 5px;
+            width: 100%;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .popup {
+      &__btn {
+        margin-top: 30px;
+        text-transform: uppercase;
+        padding: 16px 55px;
+        font-size: 16px;
+        color: #710046;
+        border: 2px solid #710046;
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        &:hover {
+          transition: all 0.2s;
+          background: #710046;
+          color: #fff;
+        }
+      }
+    }
+  }
+  
+  .checkbox input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+  }
+  
+  .checkbox__text {
+    display: inline-block;
+    position: relative;
+    padding: 0 0 0 30px;
+    cursor: pointer;
+    color: #606060;
+    font-family: "Myriad Pro";
+    //   font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+  
+  .checkbox__text:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+  }
+  
+  .checkbox input:checked + .checkbox__text:after {
+    display: block;
+  }
+  
+  .checkbox__text:after {
+    content: "";
+    display: none;
+    left: 5px;
+    -webkit-transform: rotateZ(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotateZ(45deg);
+    box-sizing: border-box;
+    border-right: 3px solid #871a5c;
+    border-bottom: 3px solid #871a5c;
+    position: absolute;
+    top: -1px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    color: #f3f3f3;
+    text-align: center;
+    line-height: 15px;
+    width: 9px;
+    height: 18px;
+    right: 0;
+  }
+  

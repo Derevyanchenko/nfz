@@ -64,3 +64,65 @@
 	// border: 1px solid #600060;
   }
 }
+
+
+// media queries
+
+@media only screen and (max-width: $lg) {
+
+  .banner__item {
+    min-height: 355px;
+  }
+
+  .banner .slick-arrow {
+    top: -255px;
+  }
+
+}
+
+
+@media only screen and (max-width: $md) {
+  .banner__item {
+    min-height: 265px;
+  }
+}
+
+
+@media only screen and (max-width: $sm) {
+  .banner__item {
+    min-height: 200px;
+  }
+
+  .banner .slick-arrow {
+    width: 26px;
+    height: 58px;
+    top: -160px;
+    img {
+      max-width: 8px;
+    }
+  }
+
+  .banner__dots .slick-dots li button {
+    width: 60px;
+  }
+
+  .banner__dots {
+    margin-top: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 375px) {
+  .banner__item {
+    min-height: 170px;
+  }
+
+  .banner .slick-arrow {
+    top: -135px;
+  }
+
+  .banner {
+    margin-bottom: 25px;
+  }
+}
+
