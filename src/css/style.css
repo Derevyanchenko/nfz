@@ -1756,6 +1756,79 @@ video {
   line-height: 26px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content .tradingHouse__item-text {
+    max-width: 300px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content {
+    background-repeat: no-repeat;
+    background-size: 62%;
+  }
+
+  .tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content .tradingHouse__item-title {
+    margin-left: 4%;
+    font-size: 56px;
+    line-height: 60px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .tradingHouse .container {
+    padding: 0;
+  }
+
+  .tradingHouse__box {
+    padding: 0 15px;
+  }
+
+  .tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content {
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content .tradingHouse__item-text {
+    display: none;
+  }
+
+  .tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content .tradingHouse__item-title {
+    margin-left: 0;
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content .tradingHouse__item-title {
+    padding: 27px 0;
+  }
+
+  .tradingHouse {
+    margin-top: 22px;
+  }
+
+  .tradingHouse .tradingHouse__box .section__title {
+    padding-bottom: 25px;
+  }
+
+  .tradingHouse__wrapper .tradingHouse__item .tradingHouse__item-content .tradingHouse__item-title {
+    margin-left: 0;
+    font-size: 34px;
+    line-height: 34px;
+    padding: 27px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .tradingHouse .tradingHouse__bottom {
+    padding-bottom: 20px;
+  }
+}
+
 .overlay {
   position: fixed;
   /*  display: none;*/
