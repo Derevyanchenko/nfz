@@ -1109,6 +1109,10 @@ video {
   .competition {
     margin-top: 20px;
   }
+
+  .competition .competition__box .competition__bottom .competition__bottom-col {
+    margin-bottom: 15px;
+  }
 }
 
 @media only screen and (max-width: 570px) {
@@ -1187,6 +1191,64 @@ video {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contactForm .contactForm__box .contactForm__form .form__inputs .form-control {
+    max-width: 245px;
+  }
+
+  .contactForm .contactForm__box .contactForm__form .form__inputs .form-control input {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .contactForm .contactForm__box {
+    padding: 30px 0px;
+  }
+
+  .contactForm .contactForm__box .btn {
+    padding: 12px 35px;
+  }
+
+  .contactForm .contactForm__box .contactForm__form .form__inputs .form-control input {
+    max-width: 190px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .contactForm .contactForm__box .contactForm__form {
+    display: none;
+  }
+
+  .contactForm .contactForm__box {
+    padding: 25px 0px;
+  }
+
+  .contactForm .contactForm__box .header__btn {
+    margin-top: 0;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    background: transparent;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    font-size: 14px;
+    padding: 11px 30px;
+  }
+
+  .contactForm .contactForm__box .header__btn:hover {
+    background: #fff;
+    color: #79004a;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+
+  .contactForm {
+    background-color: #79004a;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
 }
 
 .education .education__box .section__subtitle {
