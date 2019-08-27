@@ -996,7 +996,7 @@ video {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0 10px;
+    padding: 0 15px;
   }
 
   .competition__box .competition__column--lg {
@@ -1311,6 +1311,102 @@ video {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   opacity: 0.7;
+}
+
+@media only screen and (max-width: 991px) {
+  .education .container {
+    padding: 0;
+  }
+
+  .education .education__box {
+    padding: 0 15px;
+    padding-bottom: 20px;
+  }
+
+  .education .education__box .section__subtitle {
+    padding: 0;
+    margin-bottom: 35px;
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item {
+    height: 180px;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item img {
+    min-height: 180px;
+  }
+
+  .education .education__box .education__wrapper .education__top .education__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .education .education__box .section__subtitle {
+    padding: 0;
+    margin-bottom: 35px;
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item {
+    height: 130px;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item img {
+    min-height: 130px;
+  }
+
+  .education .education__box .education__wrapper .education__top .education__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .education .education__box .education__wrapper .education__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item:first-child {
+    padding-right: 0;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item:last-child {
+    padding-left: 0;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 0;
+    margin-top: 10px;
+    height: auto;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item img {
+    min-height: auto;
+  }
+
+  .education .education__box .education__wrapper .education__top .education__item {
+    margin-bottom: 0;
+  }
+
+  .education .education__box .section__subtitle {
+    margin-bottom: 30px;
+  }
 }
 
 .news {

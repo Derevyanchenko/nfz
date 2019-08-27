@@ -56,3 +56,104 @@
       }
   }
 }
+
+
+// media queries
+
+@media only screen and (max-width: $lg) {
+
+  .education {
+    .container {
+      padding: 0;
+    }
+    .education__box {
+      padding: 0 15px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .education .education__box .section__subtitle {
+    padding: 0;
+    margin-bottom: 35px;
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.education .education__box .education__wrapper .education__bottom .education__item {
+  height: 180px;
+}
+
+.education .education__box .education__wrapper .education__bottom .education__item img {
+  min-height: 180px;
+}
+
+.education .education__box .education__wrapper .education__top .education__item {
+  margin-bottom: 20px;
+}
+
+}
+
+
+@media only screen and (max-width: $md) {
+
+  .education .education__box .section__subtitle {
+    padding: 0;
+    margin-bottom: 35px;
+    color: #606060;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.education .education__box .education__wrapper .education__bottom .education__item {
+  height: 130px;
+}
+
+.education .education__box .education__wrapper .education__bottom .education__item img {
+  min-height: 130px;
+}
+
+.education .education__box .education__wrapper .education__top .education__item {
+  margin-bottom: 20px;
+}
+
+}
+
+@media only screen and (max-width: $sm) {
+
+  .education .education__box .education__wrapper .education__bottom {
+    flex-direction: column;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item:first-child {
+    padding-right: 0;
+  }
+
+  .education .education__box .education__wrapper .education__bottom .education__item:last-child {
+    padding-left: 0;
+}
+
+.education .education__box .education__wrapper .education__bottom .education__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  margin-bottom: 0;
+  margin-top: 10px;
+  height: auto;
+  img {
+    min-height: auto;
+  }
+}
+
+.education .education__box .education__wrapper .education__top .education__item {
+  margin-bottom: 0;
+}
+
+.education .education__box .section__subtitle {
+  margin-bottom: 30px;
+}
+
+}
