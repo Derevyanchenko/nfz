@@ -492,7 +492,7 @@
 
     <!-- popup -->
 
-    <div class="overlay " style="display: block;">
+    <div class="overlay" style="display: none;">
         <div class="popup">
             <div class="popup__wrapper">
                 <button class="popup__close">×</button>
@@ -580,17 +580,17 @@
                             <p class="contacts__form-title">Контактные данные</p>
                             <div class="contacts__form-field required">
                                 <p>Ваше имя </p>
-                                <input type="text" name="name">
+                                <input type="text" name="name" required>
                             </div>
                             <div class="contacts__form-field required">
                                 <p>Ваш телефон</p>
-                                <input type="tel" name="phone">
+                                <input type="tel" name="phone" required>
                             </div>
                             <div class="contacts__form-field required">
                                 <p>Электронная почта</p>
-                                <input type="email" name="email">
+                                <input type="email" name="email" required>
                             </div>
-                            <button class="header__btn">ОТПРАВИТЬ</button>
+                            <button class="popup__btn">ОТПРАВИТЬ</button>
                         </div>
 
                     </div>

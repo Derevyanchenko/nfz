@@ -42,6 +42,43 @@ $(document).ready(function() {
 
  });
 
+ // open popup
+
+  $(".header__btn").on("click", function() {
+    $(".overlay").fadeIn(300);
+    $("body").css("overflow-y", "hidden");
+  });
+
+  // close popup
+
+  function closePopup() {
+
+    $(".overlay").fadeOut(300);
+    $("body").css("overflow-y", "auto");
+
+  }
+
+  $(".popup__close").on("click", function() {
+    closePopup();
+  });
+
+
+  
+	// close popup after overlay click
+
+	$(function () {
+		$(document).mouseup(function (event) {
+			if ($(".overlay").is(":visible")) {
+				var popup = $(".popup");
+				if (!popup.is(event.target)
+					&& popup.has(event.target).length === 0) {
+            closePopup();
+				}
+			}
+		});
+  });
+  
+
   // banner slider
 
   $('.banner__slider').slick({

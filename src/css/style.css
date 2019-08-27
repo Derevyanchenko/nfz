@@ -1041,7 +1041,7 @@ video {
 .popup {
   position: absolute;
   left: 50%;
-  max-width: 700px;
+  max-width: 1170px;
   width: 100%;
   height: auto;
   -webkit-box-shadow: 0 3px 20px rgba(0, 0, 1, 0.5);
@@ -1055,13 +1055,18 @@ video {
   overflow: auto;
 }
 
+.popup__wrapper {
+  position: relative;
+  padding-bottom: 50px;
+}
+
 .popup__wrapper .popup__close {
   color: #79004a;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 400;
   border: 1px solid #600060;
-  width: 76px;
-  height: 77px;
+  width: 50px;
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1071,11 +1076,26 @@ video {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.popup__wrapper .popup__close:hover {
+  color: #fff;
+  background: #600060;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .popup__wrapper .popup__title {
+  border-bottom: 1px solid #600060;
+  padding: 40px 0;
+  text-align: center;
   color: #79004a;
-  font-size: 38px;
+  font-size: 28px;
   font-weight: 400;
   padding-top: 27px;
   padding-bottom: 27px;
@@ -1092,10 +1112,93 @@ video {
   padding: 0 85px;
 }
 
+.popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col:first-child {
+  padding-right: 70px;
+}
+
+.popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col:last-child {
+  padding-left: 70px;
+}
+
 .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-title {
   color: #000000;
-  font-size: 32px;
+  font-size: 26px;
   font-weight: 400;
+  margin-bottom: 32px;
+}
+
+.popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-field {
+  margin-bottom: 12px;
+}
+
+.popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-field p {
+  color: #606060;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  display: inline-block;
+  position: relative;
+}
+
+.popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-field input {
+  height: 38px;
+  border: 1px solid #606060;
+  width: 100%;
+  font-size: 16px;
+  padding-left: 14px;
+}
+
+.popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-field.required p:before {
+  content: "*";
+  color: #ff0000;
+  font-family: "Myriad Pro";
+  position: absolute;
+  right: -12px;
+  top: 0;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .checkboxBlock .checkbox .checkbox__text {
+  color: #606060;
+  font-family: "Myriad Pro";
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col textarea {
+  height: 120px;
+  border: 1px solid #606060;
+  padding-left: 14px;
+  padding-top: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.popup__wrapper .popup__btn {
+  margin-top: 30px;
+  text-transform: uppercase;
+  padding: 16px 55px;
+  font-size: 16px;
+  color: #710046;
+  border: 2px solid #710046;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.popup__wrapper .popup__btn:hover {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  background: #710046;
+  color: #fff;
 }
 
 .checkbox input {
@@ -1135,7 +1238,7 @@ video {
 .checkbox__text:after {
   content: "";
   display: none;
-  left: 4px;
+  left: 5px;
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
   -webkit-box-sizing: border-box;
@@ -1149,7 +1252,7 @@ video {
   color: #f3f3f3;
   text-align: center;
   line-height: 15px;
-  width: 10px;
+  width: 9px;
   height: 18px;
   right: 0;
 }
