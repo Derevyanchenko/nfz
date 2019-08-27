@@ -97,6 +97,31 @@ h6 {
   }
 }
 
+@media only screen and (max-width: $lg) {
+  .section__title {
+    padding-top: 25px;
+    margin-bottom: 30px;
+    font-size: 34px;
+  }
+
+  .section__title:before {
+    width: 40px;
+    height: 7px;
+  }
+}
+
+@media only screen and (max-width: $md) {
+  .section__title {
+    padding-top: 20px;
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+  .section__title:before {
+    width: 33px;
+    height: 6px;
+  }
+}
+
 .section__text {
   font-size: 18px;
   line-height: 34px;
@@ -126,8 +151,8 @@ video {
   background: transparent;
   transition: all 0.2s;
   &:hover {
-	  background: #fff;
-	  color: #79004a;
-	  transition: all 0.2s;
+    background: #fff;
+    color: #79004a;
+    transition: all 0.2s;
   }
 }

@@ -83,3 +83,87 @@
     height: 485px;
   }
 }
+
+
+
+// media queries
+
+@media only screen and (max-width: $lg) {
+
+  .competition .container {
+    padding: 0;
+  }
+  
+
+  .competition .competition__box .competition__bottom {
+    padding: 0;
+  }
+
+  .competition__box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    .competition__column--lg {
+      display: none;
+    }
+  }
+
+  .competition__title {
+    order: -1;
+  }
+
+  .competition .competition__box .competition__bottom {
+    order: 0;
+    flex-direction: column;
+  }
+
+  .competition .competition__box .competition__wrapper {
+    order: 2;
+  }
+
+  .competition .competition__box .competition__bottom .competition__bottom-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .competition .competition__box .competition__bottom .competition__bottom-col_left p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .competition .competition__box .competition__bottom .competition__bottom-col p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .competition .competition__box .competition__wrapper .column_right {
+    margin-left: 0;
+    max-width: 100%;
+    display: flex;
+  }
+
+  .competition .competition__box .competition__wrapper .competition__column .competition__item {
+    &:first-child {
+      padding-right: 10px;
+    }
+    &:last-child {
+      padding-left: 10px;
+    }
+  }
+
+  .competition .competition__box .competition__wrapper .column_right .competition__item-img {
+    margin-bottom: 20px;
+  }
+
+  .competition .competition__box .competition__wrapper .column_right .competition__item .date {
+    color: #600060;
+    margin-bottom: 6px;
+  }
+
+  .competition__item {
+    margin-bottom: 20px;
+  }
+
+}
