@@ -84,16 +84,12 @@
   }
 }
 
-
-
 // media queries
 
 @media only screen and (max-width: $lg) {
-
   .competition .container {
     padding: 0;
   }
-  
 
   .competition .competition__box .competition__bottom {
     padding: 0;
@@ -164,6 +160,59 @@
 
   .competition__item {
     margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: $md) {
+  .competition .competition__box .competition__wrapper .column_right {
+    flex-direction: column;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .competition .competition__box .competition__wrapper .competition__column .competition__item {
+    &:first-child {
+      padding-right: 0;
+    }
+    &:last-child {
+      padding-left: 0;
+    }
+  }
+
+  .competition .competition__box .competition__bottom .competition__bottom-col p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+
+  .competition .competition__box .competition__wrapper .column_right .competition__item .date {
+    font-size: 20px;
+  }
+
+  .competition .competition__box .competition__wrapper .column_right .competition__item .text {
+    font-family: "Rubik", sans-serif;
+  }
+
+  .competition {
+    margin-top: 20px;
+  }
+
+  .competition .competition__box .competition__bottom .competition__bottom-col {
+    margin-bottom: 15px;
+  }
+
+}
+
+@media only screen and (max-width: $sm) {
+
+
+
+  .competition .competition__box .competition__wrapper .column_right .competition__item-img {
+    height: 155px;
+    img {
+      min-height: 155px;
+    }
   }
 
 }
