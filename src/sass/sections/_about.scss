@@ -38,3 +38,76 @@
     }
   }
 }
+
+
+// media queries
+
+@media only screen and (max-width: $lg) {
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item h2 {
+    font-size: 42px;
+  }
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .aboutUs {
+    padding-top: 30px;
+  }
+
+}
+
+
+@media only screen and (max-width: $md) {
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item h2 {
+    font-size: 28px;
+  }
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .aboutUs {
+    padding-top: 20px;
+  }
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item:first-child {
+    padding-right: 15px;
+  }
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item:last-child {
+    padding-left: 15px;
+  }
+
+}
+
+@media only screen and (max-width: $sm) {
+
+  .aboutUs__wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item h2 {
+    margin-bottom: 13px;
+  }
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item:first-child {
+    padding-right: 0;
+  }
+
+  .aboutUs .aboutUs__wrapper .aboutUs__item:last-child {
+    padding-left: 0;
+  }
+
+}
