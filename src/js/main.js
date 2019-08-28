@@ -43,7 +43,7 @@ $(document).ready(function() {
 
    // open submenus 
 
-   $(".menu-item-has-children").on("click", function(e) {
+   $(".header__submenu-wrapper .menu-item-has-children").on("click", function(e) {
 
     e.preventDefault();
 
@@ -63,6 +63,28 @@ $(document).ready(function() {
     }
 
  });
+
+ // open submenus mob
+
+ $(".header__submenu_mob-wrapper .menu-item-has-children").on("click", function(e) {
+
+  e.preventDefault();
+
+  let 
+    that    = $(this),
+    submenu = that.find(".sub-menu");
+
+  // $(".sub-menu").slideDown(300);
+  $(".menu-item-has-children").removeClass("active");
+
+  if ( submenu.is(":visible") ) {
+    submenu.slideUp(300);
+  } else {
+    submenu.slideDown(300);
+  }
+
+});
+
 
  // open popup
 
