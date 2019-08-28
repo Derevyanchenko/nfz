@@ -156,3 +156,24 @@ video {
     transition: all 0.2s;
   }
 }
+
+
+.tradingHouse__item,
+.news__items,
+.news__item {
+  display: block;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.2s;
+  }
+}
+
+.competition__item {
+  display: block;
+  transition: all 0.2s;
+  &:hover {
+    opacity: 0.7;
+    transition: all 0.2s;
+  }
+}
