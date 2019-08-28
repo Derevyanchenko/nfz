@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // open main menu
 
-   $(".js-open-submenu").on("click", function() {
+   $(".js-open-submenu-desc").on("click", function() {
 
       let 
         submenu = $(".header__submenu-wrapper"),
@@ -17,6 +17,28 @@ $(document).ready(function() {
         that.addClass("active");
       }
 
+   });
+
+   $(".js-open-submenu-mob").on("click", function() {
+    let 
+      submenu = $(".header__submenu_mob-wrapper"),
+      that    = $(this);
+
+
+    if ( submenu.hasClass("active") ) {
+      submenu.removeClass("active");
+      that.removeClass("active");
+    } else {
+      submenu.addClass("active");
+      that.addClass("active");
+    }
+
+ });
+
+
+   $(".js-close-mob").on("click", function() {
+      $(".header__submenu_mob-wrapper").removeClass("active");
+      $(".js-open-submenu-mob").removeClass("active");
    });
 
    // open submenus 
