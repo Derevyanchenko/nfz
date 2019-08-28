@@ -2420,3 +2420,90 @@ video {
   height: 18px;
   right: 0;
 }
+
+@media only screen and (max-width: 991px) {
+  .popup__wrapper .popup__title {
+    font-size: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 1px solid #600060;
+    border-right: 2px solid #600060;
+  }
+
+  .popup__wrapper .popup__close {
+    width: 35px;
+    height: 35px;
+    right: 7px;
+    top: 7px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper {
+    padding: 0 40px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col:last-child {
+    padding-left: 35px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col:first-child {
+    padding-right: 35px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .popup__wrapper .popup__title {
+    font-size: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border: 1px solid #600060;
+    border-right: 2px solid #600060;
+  }
+
+  .popup__wrapper .popup__close {
+    width: 35px;
+    height: 35px;
+    right: 7px;
+    top: 7px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper {
+    padding: 0 20px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col:last-child {
+    padding-left: 15px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col:first-child {
+    padding-right: 15px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .checkboxBlock .checkbox .checkbox__text {
+    margin-bottom: 22px;
+    font-size: 14px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col textarea {
+    height: 80px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 25px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-field p {
+    font-size: 14px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-field input {
+    height: 30px;
+    font-size: 14px;
+  }
+
+  .popup__wrapper .popup__btn {
+    padding: 12px 35px;
+    font-size: 14px;
+  }
+}
