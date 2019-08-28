@@ -2427,7 +2427,6 @@ video {
     padding-top: 13px;
     padding-bottom: 13px;
     border: 1px solid #600060;
-    border-right: 2px solid #600060;
   }
 
   .popup__wrapper .popup__close {
@@ -2456,7 +2455,6 @@ video {
     padding-top: 13px;
     padding-bottom: 13px;
     border: 1px solid #600060;
-    border-right: 2px solid #600060;
   }
 
   .popup__wrapper .popup__close {
@@ -2485,6 +2483,7 @@ video {
 
   .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col textarea {
     height: 80px;
+    font-size: 14px;
   }
 
   .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-title {
@@ -2505,5 +2504,98 @@ video {
   .popup__wrapper .popup__btn {
     padding: 12px 35px;
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .popup__wrapper .contacts__form .contacts__form-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .popup__wrapper .popup__title {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-right: 1px solid #600060;
+  }
+
+  .popup__wrapper .popup__close {
+    width: 24px;
+    height: 24px;
+    right: 6px;
+    top: 6px;
+    font-size: 20px;
+  }
+
+  .popup__wrapper .contacts__form {
+    padding-top: 10px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col:first-child {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col:last-child {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .checkboxBlock .checkbox .checkbox__text {
+    margin-bottom: 15px;
+    font-size: 13px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col textarea {
+    height: 60px;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-title {
+    color: #600060;
+    text-transform: uppercase;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-field p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-field {
+    margin-bottom: 10px;
+  }
+
+  .popup__wrapper .contacts__form .contacts__form-wrapper .contacts__form-col .contacts__form-field input {
+    height: 28px;
+    font-size: 13px;
+  }
+
+  .popup__wrapper .popup__btn {
+    padding: 10px 24px;
+    font-size: 14px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .popup__wrapper {
+    padding-bottom: 30px;
   }
 }
